@@ -1,0 +1,277 @@
+/*
+Teal color (used for headings and backgrounds): #4aaaa5
+Regular font color (used for paragraphs and all text besides the headings): #777777
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 h2 h3 {
+  font-family: "Georgia", Times, Times New Roman, serif;
+}
+
+header {
+  border-bottom: 2px solid #cccccc;
+  background-color: #fff;
+  position: relative;
+  top: -10px;
+  height: 58px;
+}
+
+p {
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  color: #777777;
+  padding-top: 10px;
+  line-height: 2;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+header h1 {
+  background-color: #4eaaa4;
+  color: #fff;
+  float: left;
+  margin: 0;
+  margin-left: 10%;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 10%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+header li {
+  float: right;
+}
+
+header a {
+  color: #777777;
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #666666;
+  border-top: 5px solid #4eaaa4;
+  height: 50px;
+  margin-top: -50px;
+  text-align: center;
+  padding-bottom: 10px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #cccccc;
+}
+
+.background {
+  background-image: url("../images/circles-light.png");
+}
+
+.copyright {
+  color: #dddddd;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 20px 20px 15px 0px;
+}
+
+.about-me {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  clear: both;
+  margin: 10px 10% 150px;
+  max-width: 960px;
+  padding: 20px;
+}
+
+.about-me h1 {
+  color: #4eaaa4;
+}
+
+.contact {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  clear: both;
+  margin: 10px 10% 150px;
+  max-width: 960px;
+  padding: 20px;
+}
+
+.contact h1 {
+  color: #4eaaa4;
+}
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.button {
+  background-color: #4eaaa4;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.portfolio {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  clear: both;
+  margin: 10px 10% 150px;
+  max-width: 960px !important;
+  padding: 20px;
+  float: left;
+}
+
+.portfolio h1 {
+  color: #4eaaa4;
+}
+
+.card {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin: 30px 10px;
+}
+
+.clear {
+  clear: right;
+}
+
+.title {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  background-color: teal;
+  width: 100%;
+  bottom: 20px;
+}
+
+@media screen and (max-width:980px) {
+  .about-me {
+    margin-right: 30%;
+  }
+  .contact {
+    margin-right: 30%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  h1 {
+    width: 100%;
+    clear: both;
+  }
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  li {
+    display: inline;
+    justify-content: space-around;
+  }
+  .about-me {
+    margin: 5% 5% 20%;
+  }
+  .img {
+    width: 50%;
+    height: auto;
+  }
+  .placeholder {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .card {
+    width: 45%;
+    justify-content: center;
+    height: auto;
+    margin: 10px 5px;
+  }
+  .contact {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  h1 {
+    width: 100%;
+    clear: both;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  li {
+    display: inline;
+    justify-content: space-around;
+  }
+  .about-me {
+    margin: 5% 10% 20%;
+  }
+  .placeholder {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .contact {
+    margin: 0 5%;
+  }
+}
